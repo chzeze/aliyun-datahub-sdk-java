@@ -8,7 +8,7 @@ import javax.ws.rs.core.HttpHeaders;
 import java.io.IOException;
 
 public class LZ4EncoderFilter implements ClientRequestFilter {
-    private static final String LZ4_STR = HttpConfig.CompressType.LZ4.getValue();
+    private static final String LZ4_STR = HttpConfig.CompressType.LZ4.name();
 
     @Override
     public void filter(ClientRequestContext request) throws IOException {

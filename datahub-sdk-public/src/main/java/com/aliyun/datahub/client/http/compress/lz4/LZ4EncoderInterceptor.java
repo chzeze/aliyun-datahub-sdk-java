@@ -11,7 +11,7 @@ import javax.ws.rs.ext.WriterInterceptorContext;
 import java.io.IOException;
 
 public class LZ4EncoderInterceptor implements WriterInterceptor, ReaderInterceptor {
-    private static final String LZ4_STR = HttpConfig.CompressType.LZ4.getValue();
+    private static final String LZ4_STR = HttpConfig.CompressType.LZ4.name();
 
     @Override
     public Object aroundReadFrom(ReaderInterceptorContext context) throws IOException, WebApplicationException {
